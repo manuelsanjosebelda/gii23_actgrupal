@@ -1,0 +1,12 @@
+## Función para calcular e
+
+def calcular_e(aproximaciones):
+    e_aproximado = 0.0
+    for i in range(aproximaciones):
+        e_aproximado += 1 / factorial(i)
+    return e_aproximado
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
